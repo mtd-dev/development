@@ -83,7 +83,7 @@ const Login = props => {
             <div className={styles.checkBox}>
                 <label htmlFor={props.id} tabIndex={0} className={styles.label}>
                         <input id={props.id} type="checkbox" onClick={() => handleChange(state.checkedA)}/>
-                        <span className={styles.toggle__span}>I accept the <Link to='/'>Terms and Conditions</Link></span>
+                        <span className={styles.toggle__span}>I accept the <Link to='/'>Terms And Conditions</Link></span>
                 </label>
             </div>
             <button className={styles.button} disabled={disableButton} onClick={registrationHandler}>REGISTER</button>
