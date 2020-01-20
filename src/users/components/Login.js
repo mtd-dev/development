@@ -62,7 +62,7 @@ const Login = props => {
 
     return(
         <div className={styles.login}>
-            <h3>Create Account</h3>
+            <h3>CREATE ACCOUNT</h3>
             <form className={classes.root} noValidate autoComplete="off">
                 <TextField id="email" 
                         label="Email" 
