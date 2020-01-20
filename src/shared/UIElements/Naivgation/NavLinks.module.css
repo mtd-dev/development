@@ -1,0 +1,15 @@
+.nav_links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_link  a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_link a:hover,
+.nav_link a:active {
+    color: yellow;
+}

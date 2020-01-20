@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
 import './App.css';
+
+import AddCars from './cars/components/AddCar';
+import About from './shared/pages/About';
+import Login from './users/components/Login';
+import Profile from './users/components/Profile';
+import Profiling from './users/components/Profiling';
+
+import MainNavigation from './shared/UIElements/Naivgation/MainNavigation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <MainNavigation />
+        <main>
+          <Switch>
+            <Route exact path="/profile">
+              <Profile/>
+            </Route>
+            <Route exact path="/login">
+              <Login/>
+            </Route>
+            <Route exact path="/profiling">
+              <Profiling />
+            </Route>
+            <Route exact path="/addcar">
+              <AddCars/>
+            </Route>
+            <Route exact path="/">
+              <About/>
+            </Route>
+            <Redirect to="/"/>
+          </Switch>
+        </main> 
+      </Router>
+    </React.Fragment>
   );
-}
+};
 
 export default App;

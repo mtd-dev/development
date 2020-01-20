@@ -1,0 +1,63 @@
+.login {
+    margin-top: 5rem;
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.button {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    font-family: 'Gotham, sans-serif';
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    user-select: none;
+
+    transition: all linear 100ms;
+    box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(100deg, #FC9272, #FF5B7F);
+    color: white;
+    -webkit-appearance: none;
+}
+
+.button:disabled {
+    background: linear-gradient(100deg, rgb(247, 190, 176), rgb(252, 195, 207));
+}
+
+.label {
+    display: inline-block;
+    margin: 1rem 0;
+    vertical-align: bottom;
+}
+
+.checkBox {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.checkBox input[type="checkbox"] {
+    border: 1px solid #FF5B7F;
+    background: white;
+    width: .8rem;
+    height: .8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 1rem;
+}
+
+.checkBox input[type="checkbox"]:checked {
+    background: url('../../images/chkbx.svg');
+    background-position: center;
+}

@@ -1,0 +1,4 @@
+.profile_control {
+    display: flex;
+    flex-direction: column;
+}

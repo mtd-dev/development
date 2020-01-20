@@ -1,0 +1,15 @@
+.logo {
+    margin: 0 1rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.navbar {
+    margin-right: 2rem;
+    color: white;
+}
